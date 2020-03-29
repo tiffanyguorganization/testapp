@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Hind);
+      body {
+          background-color: aqua;
+        font-family: 'Hind', sans-serif;
+        font-size: 14pt;
+      }
+      a {
+        color: #669;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+
+      /************************************************************************************
+      MEDIA QUERIES
+      *************************************************************************************/
+      /* for 980px or less */
+      @media screen and (max-width: 1500px) {
+
+        * { font-size: 1.0rem; }
+
+          #pagewrap {
+        
+               width:100%;
+            display: grid;
+
+              grid-template-rows: 35% 65%;
+            grid-template-columns: 100%;
+        }
+          
+          #header {
+              height: 700px;
+              background-color: chartreuse;
+             
+/*
+            background: url("background.jpg");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-size: 400px 600px;
+*/
+            width: 100%;
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+              
+              
+              
+        }
+          #body1{
+              display: grid;
+              grid-template-columns: 50% 50%;
+              grid-template-rows: 75% 25%;
+              grid-row: 2 / span 1;
+              grid-column: 1 / span 1;
+              background-color: aquamarine;
+          }
+        
+        #content {
+
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 2;
+            background-color: pink;
+        }
+        #sidebar {
+
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+            background-color: yellow;
+        }
+          #footer {
+              background-color: purple;
+             grid-row: 2 / span 1;
+   
+          }
+
+      }
+      /* for 480px or less */
+      @media screen and (max-width: 650px) {
+
+        * { font-size: 0.8rem; }
+          #pagewrap {
+        height: 800px;
+            display: grid;
+    
+              grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+            
+        }
+        #header {
+          height: 400px;
+
+/*
+            background: url("background.jpg");
+            background-size: auto;
+            background-repeat: no-repeat;
+  background-size: 400px 600px;
+*/
+              width: 100%;
+              grid-row: 1 / span 1;
+              grid-column: 1 / span 1;
+              
+              
+              
+        }
+          #body1{
+              display: grid;
+
+              grid-template-rows: 33.3% 33.3% 33.3%;
+              grid-template-columns: 100%;
+              grid-row: 2 / span 1;
+          }
+        
+        #content {
+   
+background-color: yellow;
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+        #sidebar {
+background-color: pink;
+  
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+        }
+          #footer {
+              background-color: purple;
+             grid-row: 3 / span 1;
+              grid-column: 1 / span 1;
+   
+          }
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div id="pagewrap">
+
+      <div id="header">
+        <h1>Header</h1>
+        <p>Tutorial by <a href="http://webdesignerwall.com/">
+          Web Designer Wall</a> 
+          <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps">related article</a>
+            
+                  <ul id="mainMenu">
+        <li><a id="getDate" href="">AJAX GET date from server</a></li>
+        <li><a id="clearDate" href="">Clear date data in page</a></li>
+        <li><a id="getBadURL" href="">Click to create an ERROR</a></li>
+        <li><a id="getJSONList" href="">Click to get a JSON list</a></li>
+        <li><a id="getHTMLList" href="">Click to get a HTML list</a></li>
+      </ul>
+            
+            
+            
+            
+        
+      </div>
+        <div id="body1">
+        
+      <div id="content">
+        <h2>Content</h2>
+
+      </div>
+
+      <div id="sidebar">
+        <h3>Sidebar</h3>
+          <p></p>
+
+      </div>
+
+      <div id="footer">
+        <h4>Footer</h4>
+          <p>Copyright: Tiffany Gu</p>
+          <p>Year: 2019-2010</p>
+          <p>BCIT</p>
+      </div>
+</div>
+    </div>
+
+  </body>
+</html>
